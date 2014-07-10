@@ -23,9 +23,6 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 
-# PowerHAL
-TARGET_USES_CM_POWERHAL := true
-
 # chargers
 BOARD_CHARGER_RES := device/samsung/qcom-common/charger
 
@@ -51,7 +48,7 @@ BOARD_BATTERY_DEVICE_NAME := "battery"
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/qcom-common
 
-BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
+BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
 # Override healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.qcom
